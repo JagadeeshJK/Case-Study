@@ -1,0 +1,42 @@
+TABLE 1: 
+Name:Admin
+
+Fields:
+1.AdminID - (Primary Key)
+2.Adminname
+3.Deptname
+
+
+TABLE 2:
+Name:Task
+
+Fields:
+1.TaskID - (Primary Key)
+2.Taskname
+3.Description
+4.Status
+5.Priority
+6.Assigndate
+7.Compdate
+8.AdminID - (Foreign Key)
+
+
+TABLE 3:
+Name:Employee
+
+Fields:
+1.EmployeeID  - (Primary Key)
+2.Employeename
+3.Deptname
+4.AdminID - (Foreign Key)
+5.TaskID  - (Foreign Key)
+
+TABLE 4:
+Name:NOTES
+
+Fields:
+1.NotesID - (Primary Key)
+2.TaskID  - (Foreign Key)
+3.AdminID - (Foreign Key)
+4.NotesDetails
+5.Bookmark
